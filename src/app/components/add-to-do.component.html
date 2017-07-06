@@ -1,0 +1,7 @@
+<div>
+	<h3>Add To-Do</h3>
+	<form (ngSubmit)="onSubmit(addToDoForm.value)" #addToDoForm="ngForm">
+		<label>Add To-Do:</label>
+		<input [(ngModel)]="model.item" name="item">
+	</form>
+</div>
